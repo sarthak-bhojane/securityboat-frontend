@@ -6,7 +6,8 @@ import "./styles.css";
 /**
  * CONFIG
  */
-const BACKEND = process.env.REACT_APP_BACKEND_URL || "http://localhost:4000";
+// const BACKEND = process.env.REACT_APP_BACKEND_URL || "http://localhost:4000";
+const BACKEND = process.env.REACT_APP_BACKEND_URL || "https://securityboat-backend-3odb.onrender.com";
 
 /**
  * Helpers
