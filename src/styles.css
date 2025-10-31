@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+body { font-family: Inter, Arial, sans-serif; background: #f6f8fb; margin: 0; color: #222; }
+.header { display:flex; justify-content:space-between; align-items:center; padding:14px 20px; background:#0b5cff; color:white; }
+.header a { color:white; text-decoration:none; margin-right:12px; }
+.header .brand a { font-weight:700; font-size:18px; }
+.header nav a { margin-right:10px; color: white; }
+.link-btn { background:none; border:none; color:white; cursor:pointer; font-size:14px; padding:6px; }
+.main { padding:20px; min-height:calc(100vh - 128px); max-width:1100px; margin: 0 auto; }
+.footer { background:#f1f4f9; padding:10px; color:#555; text-align:center; }
+
+/* Boxes */
+.box { background:white; border-radius:8px; padding:16px; margin-bottom:12px; box-shadow:0 6px 18px rgba(11,92,255,0.06); }
+.auth-box { max-width:420px; margin: 30px auto; padding:20px; }
+
+/* Layout */
+.controls { margin-bottom:16px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:15px; }
+
+/* Card */
+.card { background:white; border-radius:8px; overflow:hidden; cursor:pointer; transition: transform .12s ease; box-shadow: 0 6px 14px rgba(12,20,40,0.04); }
+.card img { width:100%; height:140px; object-fit:cover; display:block; }
+.card h3 { padding:10px; font-size:15px; margin:0; }
+.card .meta { padding:0 10px 12px; color:#666; font-size:13px; }
+
+/* Filters */
+.filters { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+.filters input, .filters select { padding:8px 10px; border-radius:6px; border:1px solid #dbe3ff; }
+.range-row { display:flex; gap:8px; }
+
+/* Details */
+.details-box .detail-grid { display:grid; grid-template-columns: 360px 1fr; gap:18px; align-items:start; }
+.details-box img { width:100%; height:320px; object-fit:cover; border-radius:8px; }
+.back-btn { background:#eee; border:0; padding:8px 10px; border-radius:6px; cursor:pointer; margin-bottom:12px; }
+
+/* Small */
+@media (max-width:700px) {
+  .details-box .detail-grid { grid-template-columns: 1fr; }
+  .card img { height:120px; }
+}
